@@ -194,3 +194,9 @@ button{
     background: rgba(0,0,0,0.4);
     z-index: -1;
 }
+@media (max-width: 800px){
+    .outer{
+        height: 680px;
+        width: 340px;
+    }
+}
