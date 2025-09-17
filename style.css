@@ -16,8 +16,6 @@ body{
     border-radius: 40px;
     position: relative;
     z-index: 5;
-    overflow: hidden;
-    
 }
 
 .inner{
@@ -44,13 +42,14 @@ body{
 .outer-btn{
     height: 40px;
     width: 6px;
-    background-color: black;
+    background-color: rgb(241, 0, 0);
     position: absolute;
     top: 20%;
     left: -2.4%;
-    border: 1px solid gray;
+    border: 1px solid rgb(255, 196, 2);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    z-index: 99;
 }
 .btn2{
     top: 30%;

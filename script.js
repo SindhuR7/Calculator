@@ -5,7 +5,6 @@ const erase = document.querySelector("#erase")
 const opBtn = document.querySelectorAll(".operation")
 const nbr = document.querySelectorAll(".btns")
 const equal = document.querySelector("#ans")
-const history = document.querySelector(".history")
 let current = "";
 let previous = "";
 let operation = null;
@@ -74,16 +73,7 @@ const save = (expression, result) => {
     localStorage.setItem("record",JSON.stringify(storage));
 }
 
-const historyData = () => {
-    storage.forEach(item => {
-    let div = document.createElement("div")
-    div.innerHTML = `
-     <strong> ${item.expression}</strong> = ${item.result}
-     <br><small>${item.time}</small>
-    `;
-    history.appendChild(div)
-    })
-}
+
 //Calculation
 const Result = () => {
     let value1 = parseFloat(current);
